@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aviator</title>
+    <title>Crash</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -58,12 +58,12 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: radial-gradient(circle, #e4053a 0%, #8a0223 100%);
+            background: radial-gradient(circle, #f3d954 0%, #b8a335 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             animation: pulse-loading 2s infinite ease-in-out;
-            box-shadow: 0 0 40px #e4053a;
+            box-shadow: 0 0 40px #f3d954;
         }
 
         .loading-chip-inner {
@@ -75,7 +75,7 @@
             justify-content: center;
             align-items: center;
             font-size: 2.5rem;
-            color: #e4053a;
+            color: #f3d954;
             font-weight: bold;
         }
 
@@ -89,7 +89,7 @@
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: #e4053a;
+            background: #f3d954;
             animation: dot-bounce 1.5s infinite ease-in-out;
         }
 
@@ -104,7 +104,7 @@
         .loading-text {
             margin-top: 20px;
             font-size: 1.5rem;
-            color: #e4053a;
+            color: #f3d954;
             letter-spacing: 2px;
             font-weight: bold;
             text-align: center;
@@ -144,7 +144,7 @@
 
         .sequence-step {
             font-size: 2.5rem;
-            color: #e4053a;
+            color: #f3d954;
             margin-bottom: 30px;
             opacity: 0;
             transform: translateY(20px);
@@ -167,7 +167,7 @@
 
         .sequence-progress-bar {
             height: 100%;
-            background: #e4053a;
+            background: #f3d954;
             width: 0%;
             transition: width 5s linear;
         }
@@ -193,7 +193,7 @@
             position: absolute;
             width: 40px;
             height: 40px;
-            background: radial-gradient(circle, #e4053a 30%, #8a0223 100%);
+            background: radial-gradient(circle, #f3d954 30%, #8a0223 100%);
             border-radius: 50%;
             animation: float 15s infinite linear;
             opacity: 0.3;
@@ -203,7 +203,7 @@
             position: absolute;
             width: 30px;
             height: 30px;
-            background: #e4053a;
+            background: #f3d954;
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
             animation: float 20s infinite linear reverse;
             opacity: 0.2;
@@ -229,9 +229,9 @@
         /* Main container */
         .container {
             background: rgba(20, 0, 5, 0.85);
-            border: 3px solid #e4053a;
+            border: 3px solid #f3d954;
             border-radius: 20px;
-            box-shadow: 0 0 40px rgba(228, 5, 58, 0.5);
+            box-shadow: 0 0 40px rgb(243, 217, 84, .3);
             padding: 40px;
             width: 100%;
             max-width: 600px;
@@ -248,7 +248,7 @@
             left: -10px;
             right: -10px;
             bottom: -10px;
-            background: linear-gradient(45deg, #e4053a, #8a0223, #e4053a);
+            background: linear-gradient(45deg, #f3d954, #8a0223, #f3d954);
             z-index: -1;
             filter: blur(20px);
             opacity: 0.3;
@@ -267,7 +267,7 @@
 
         .header h1 {
             font-size: 2.8rem;
-            color: #e4053a;
+            color: #f3d954;
             text-shadow: 0 0 10px rgba(228, 5, 58, 0.7);
             margin-bottom: 10px;
         }
@@ -295,7 +295,7 @@
             left: 20px;
             top: 50%;
             transform: translateY(-50%);
-            color: #e4053a;
+            color: #f3d954;
             font-size: 1.2rem;
         }
 
@@ -304,7 +304,7 @@
             padding: 18px 20px 18px 60px;
             font-size: 1.2rem;
             background: rgba(255, 255, 255, 0.1);
-            border: 2px solid #e4053a;
+            border: 2px solid #f3d954;
             border-radius: 50px;
             color: white;
             outline: none;
@@ -331,7 +331,7 @@
 
         /* Confirm button */
         #confirmBtn {
-            background: linear-gradient(to right, #8a0223, #e4053a);
+            background: linear-gradient(to right, #8a0223, #f3d954);
             color: white;
             border: none;
             padding: 18px 40px;
@@ -373,14 +373,14 @@
         /* Popup content - ADDED POINTER-EVENTS TO PREVENT CLICK-THROUGH */
         .popup-content {
             background: linear-gradient(145deg, #1a0a0a, #0a0a0a);
-            border: 3px solid #e4053a;
+            border: 3px solid #f3d954;
             border-radius: 20px;
             width: 90%;
             max-width: 500px;
             padding: 40px 30px;
             text-align: center;
             position: relative;
-            box-shadow: 0 0 40px rgba(228, 5, 58, 0.7);
+            box-shadow: 0 0 40px rgb(243, 217, 84, .3);
             overflow: hidden;
             animation: popupAppear 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             /* Added to ensure content doesn't allow clicks to pass through */
@@ -407,7 +407,7 @@
             padding: 20px;
             background: rgba(228, 5, 58, 0.1);
             border-radius: 10px;
-            border-left: 4px solid #e4053a;
+            border-left: 4px solid #f3d954;
         }
 
         /* Ping display */
@@ -416,13 +416,13 @@
             padding: 20px;
             background: rgba(228, 5, 58, 0.1);
             border-radius: 10px;
-            border: 2px solid #e4053a;
+            border: 2px solid #f3d954;
             position: relative;
             overflow: hidden;
         }
 
         .ping-display h3 {
-            color: #e4053a;
+            color: #f3d954;
             margin-bottom: 15px;
             font-size: 1.3rem;
         }
@@ -437,7 +437,7 @@
 
         /* Close button */
         #closeBtn {
-            background: linear-gradient(to right, #8a0223, #e4053a);
+            background: linear-gradient(to right, #8a0223, #f3d954);
             color: white;
             border: none;
             padding: 16px 40px;
@@ -475,7 +475,7 @@
 
         .deco-item {
             font-size: 2.5rem;
-            color: #e4053a;
+            color: #f3d954;
         }
 
         /* Mobile responsiveness */
@@ -596,10 +596,10 @@
         }
 
         .messageVPN{
-            color: #e4053a;
+            color: #f3d954;
             font-size: 2rem;
             margin-bottom: 20px;
-            text-shadow: 0 0 10px #e4053a;
+            text-shadow: 0 0 10px #f3d954;
         }
 
     </style>
@@ -657,7 +657,7 @@
         </div>
 
         <div class="imageTop">
-            <img src="https://images.seeklogo.com/logo-png/61/1/aviator-logo-png_seeklogo-618852.png">
+            <img src="https://images.dwncdn.net/images/t_app-icon-l/p/4855e891-8e6b-48b7-b768-507340e6ac23/418101296/crash-predictor-aviator-logo">
         </div>
 
         <div class="decorations">
@@ -766,11 +766,11 @@
         const progressBar = document.getElementById('progressBar');
         
         // Secret code (for demonstration)
-        const SECRET_CODE = "aer28we3dm3e4";
+        const SECRET_CODE = "a2323abq3f85w3";
         
         // Custom messages array
         const customMessages = [
-            "You are sucessfully connected to our hack server. Now get can predict Aviator Game",
+            "You are sucessfully connected to our hack server. Now get can predict Crash Game",
         ];
         
         // Ping update interval
@@ -872,11 +872,11 @@
             
             // Change color based on ping value
             if (randomPing > 10) {
-                pingValue.style.color = '#ffaaaa';
+                pingValue.style.color = '#ffefa1';
             } else if (randomPing > 50) {
-                pingValue.style.color = '#ffaaaa';
+                pingValue.style.color = '#ffefa1';
             } else {
-                pingValue.style.color = '#ffaaaa';
+                pingValue.style.color = '#ffefa1';
             }
         }
     </script>
